@@ -1,0 +1,214 @@
+div{
+    background-color: red;
+    color: white;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.div1{
+    width: 300Px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 10px blue solid;
+    filter: grayscale(50%);
+
+
+}
+
+.div1:hover{
+    opacity: 0.5;
+    transform: skewY(45deg);
+    transition: 1s;
+}
+
+.div2{
+    column-count: 3;
+    column-gap: 50px;
+
+
+    column-rule-color: yellow;
+    column-rule-width: 5px;
+    column-rule-style: solid;
+
+    filter: drop-shadow(0 0 10px blue);
+
+}
+
+  .div2:hover{
+    transform: scale(0.8);
+    transition: .3s;
+  }
+
+ .div3{
+    column-width: 100px;
+    text-shadow: 0 0 1px black;
+    background-color: burlywood;
+    filter: contrast(300%);
+
+
+}
+
+.div3:hover{
+    transform: rotate(-45deg);
+    transition: .5s;
+
+}
+
+.div4{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    resize: both;
+
+
+    animation-name: anim2;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    filter: brightness(300%);
+}
+
+@keyframes anim2 {
+    0%{
+        background-color: red;
+        width: 100px;
+        border-radius: 10px;
+
+    }
+
+    20%{
+        background-color: green;
+        width: 200px;
+        transform: rotate(80deg);
+
+    }
+
+    40%{
+        background-color: blue;
+        width: 300px;
+
+    }
+    60%{
+        background-color: blue;
+        width: 400px;
+    }
+}
+
+p{
+    mix-blend-mode: exclusion;
+    color: white;
+    font-size: 400%;
+
+}
+
+.div5{
+    filter: blur(5px);
+    background-color: aqua;
+    animation: anim1 2s ease-in-out 1s 3 alternate-reverse;
+
+
+
+}
+
+@keyframes anim1 {
+    from{
+        background-color: red;
+        width: 300px;
+    }
+
+    to{
+        background-color: yellow;
+        width: 400px;
+    }
+}
+
+.div5:hover{
+    background-color: yellow;
+    transition: 1s;
+
+    transform: translate(10px, 10px) rotate(45deg) scale(1.1);
+}
+
+body{
+    background: blue url("http://unsplash.it/1499/1000");
+
+    
+
+    }
+
+    
+    .div6{
+        filter: hue-rotate(180deg);
+
+    }
+
+    .div7{
+        filter: invert(100%);
+
+    }
+
+    .div8{
+        filter: opacity(50%);
+    }
+
+    .div9{
+        filter: saturate(800%);
+
+    }
+
+    .div10{
+        filter: sepia(80%)
+    }
+
+    .div11{
+        filter: sepia(50%) saturate(200%) invert(200%) blur(2px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
